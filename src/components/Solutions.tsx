@@ -6,10 +6,10 @@ import myobLogo from '../assets/MYOB.png';
 import sageLogo from '../assets/Sage50.png';
 
 const solutions = [
-    { title: 'SAP Business One', category: 'ERP SYSTEMS', image: sapLogo },
-    { title: 'QuickBooks', category: 'ACCOUNTING SYSTEMS', image: quickbooksLogo },
-    { title: 'MYOB', category: 'ACCOUNTING SYSTEMS', image: myobLogo },
-    { title: 'Sage 50', category: 'ACCOUNTING SYSTEMS', image: sageLogo },
+    { title: 'SAP Business One', image: sapLogo },
+    { title: 'QuickBooks', image: quickbooksLogo },
+    { title: 'MYOB', image: myobLogo },
+    { title: 'Sage 50', image: sageLogo },
 ];
 
 const Solutions: React.FC = () => {
@@ -43,9 +43,6 @@ const Solutions: React.FC = () => {
                                     className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
-                            <span className="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mb-2">
-                                {sol.category}
-                            </span>
                             <h3 className="text-lg md:text-2xl font-black text-primary uppercase">
                                 {sol.title}
                             </h3>
@@ -58,3 +55,4 @@ const Solutions: React.FC = () => {
 };
 
 export default Solutions;
+    

@@ -11,8 +11,8 @@ const expertise = [
     { title: 'Microsoft Server 2008', image: server08 },
     { title: 'Microsoft Server 2012', image: server12 },
     { title: 'Microsoft 2022', image: server22 },
-    { title: 'Windows 7 & 10', image: win7_10 },
-    { title: 'Windows 11', image: win11 },
+    { title: 'Windows 7 & 10 Workstations', image: win7_10 },
+    { title: 'Windows 11 Workstation', image: win11 },
     { title: 'Ubuntu Desktop & Server', image: ubuntu },
 ];
 
@@ -57,9 +57,6 @@ const Expertise: React.FC = () => {
                                     className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                                 />
                             </div>
-                            <span className="text-[10px] font-black tracking-[0.2em] text-blue-500 uppercase mt-4 mb-1">
-                                Infrastructure
-                            </span>
                             <h3 className="text-base md:text-xl font-black text-primary uppercase text-center">
                                 {item.title}
                             </h3>

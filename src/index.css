@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +16,7 @@
 
   body {
     margin: 0;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
     background-color: #050C15;
     color: #ffffff;
     overflow-x: hidden;
@@ -23,19 +25,19 @@
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    @apply max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 py-16 sm:py-24;
   }
 
   .btn-primary {
-    @apply inline-flex items-center px-6 py-2 border border-transparent text-sm font-bold rounded shadow-sm text-primary bg-white hover:bg-gray-100 transition-all duration-300 uppercase tracking-wider;
+    @apply inline-flex items-center px-6 py-2 border border-transparent text-sm font-black rounded shadow-sm text-primary bg-white hover:bg-gray-100 transition-all duration-300 uppercase tracking-wider;
   }
 
   .btn-outline {
-    @apply inline-flex items-center px-6 py-2 border-2 border-primary text-sm font-bold rounded text-primary bg-transparent hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-wider;
+    @apply inline-flex items-center px-6 py-2 border-2 border-primary text-sm font-black rounded text-primary bg-transparent hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-wider;
   }
 
   .navbar-link {
-    @apply text-sm font-bold text-gray-700 hover:text-primary transition-colors uppercase tracking-tight relative pb-1;
+    @apply text-sm font-black text-gray-700 hover:text-primary transition-colors uppercase tracking-tight relative pb-1;
   }
 
   .navbar-link::after {
@@ -54,7 +56,7 @@
   }
 
   .navbar-link-dark {
-    @apply text-sm font-bold text-white/70 hover:text-white transition-colors uppercase tracking-tight relative pb-1;
+    @apply text-sm font-black text-white/70 hover:text-white transition-colors uppercase tracking-tight relative pb-1;
   }
 
   .navbar-link-dark::after {

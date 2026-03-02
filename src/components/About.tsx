@@ -5,7 +5,7 @@ import aboutImg from '../assets/about us.avif';
 const About: React.FC = () => {
     return (
         <section id="about" className="bg-primary py-16 md:py-24 text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ const About: React.FC = () => {
                             DT I.T. Solutions and Consultancy personnel have experience with numerous operating system platforms, including Microsoft Server, Windows 10/11, and Ubuntu Linux.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-white/80">
-                            At DreamTeam... We bring IT Vision to Life through Technology & Excellence.
+                            At DreamTeam... <span className="font-accent text-white text-lg md:text-xl">We bring IT Vision to Life through Technology & Excellence.</span>
                         </p>
 
                         <div className="pt-4">

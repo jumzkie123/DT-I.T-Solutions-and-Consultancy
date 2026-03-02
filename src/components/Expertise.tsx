@@ -18,14 +18,14 @@ const expertise = [
 
 const Expertise: React.FC = () => {
     return (
-        <section id="expertise" className="py-16 md:py-24 bg-slate-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="expertise" className="py-16 md:py-24 bg-slate-200">
+            <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20">
                 <motion.h2
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl md:text-4xl font-black text-primary text-center uppercase mb-6 md:mb-10 tracking-tight"
+                    className="text-3xl md:text-5xl font-black text-primary text-center uppercase mb-6 md:mb-10 tracking-tight"
                 >
                     Our Expertise
                 </motion.h2>
@@ -50,7 +50,7 @@ const Expertise: React.FC = () => {
                             transition={{ duration: 0.6, delay: idx * 0.1 }}
                             className="flex flex-col items-center group cursor-default"
                         >
-                            <div className="w-full aspect-video flex items-center justify-center p-6 md:p-8 bg-white border border-gray-100 rounded-lg shadow-sm group-hover:shadow-md transition-all duration-500">
+                            <div className="w-full aspect-video flex items-center justify-center p-6 md:p-8 bg-slate-100 border border-slate-300 rounded-lg shadow-sm group-hover:shadow-md transition-all duration-500">
                                 <img
                                     src={item.image}
                                     alt={item.title}

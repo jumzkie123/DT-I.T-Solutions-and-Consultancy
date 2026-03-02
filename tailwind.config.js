@@ -8,6 +8,11 @@ export default {
     extend: {
       colors: {
         primary: "#050C15",
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        heading: ['Montserrat', 'sans-serif'],
+        accent: ['Satisfy', 'cursive'],
       }
     },
   },

@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    onNavigate: (page: string, category?: string, section?: string) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     return (
         <footer id="contact" className="bg-primary pt-16 md:pt-24 pb-12 md:pb-20 text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
                     {/* Left Column: Contact Info */}
                     <div className="space-y-8">
@@ -16,7 +20,7 @@ const Footer: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                <span>Cagayan de Oro, Philippines, 9000</span>
+                                <span>Cagayan de Oro, Philippines</span>
                             </div>
 
                             {/* Phone */}
@@ -62,11 +66,13 @@ const Footer: React.FC = () => {
                     {/* Right Column: Links & Social */}
                     <div className="flex flex-col md:items-end justify-between gap-10 md:gap-0">
                         <div className="space-y-4 md:text-right text-xs font-bold uppercase tracking-widest text-white/70">
-                            <a href="#" className="block hover:text-white transition-colors">Home</a>
-                            <a href="#about" className="block hover:text-white transition-colors">About Us</a>
-                            <a href="#solutions" className="block hover:text-white transition-colors">Our Solutions</a>
-                            <a href="#expertise" className="block hover:text-white transition-colors">Our Expertise</a>
-                            <a href="#values" className="block hover:text-white transition-colors">Core Values</a>
+                            <button onClick={() => onNavigate('home')} className="block hover:text-white transition-colors w-full md:text-right text-left">Home</button>
+                            <button onClick={() => onNavigate('home', undefined, 'about')} className="block hover:text-white transition-colors w-full md:text-right text-left">About Us</button>
+                            <button onClick={() => onNavigate('solutions')} className="block hover:text-white transition-colors w-full md:text-right text-left">Our Solutions</button>
+                            <button onClick={() => onNavigate('home', undefined, 'expertise')} className="block hover:text-white transition-colors w-full md:text-right text-left">Our Expertise</button>
+                            <button onClick={() => onNavigate('home', undefined, 'news')} className="block hover:text-white transition-colors w-full md:text-right text-left">News and Updates</button>
+                            <button onClick={() => onNavigate('home', undefined, 'testimonials')} className="block hover:text-white transition-colors w-full md:text-right text-left">Testimonials</button>
+                            <button onClick={() => onNavigate('home', undefined, 'values')} className="block hover:text-white transition-colors w-full md:text-right text-left">Core Values</button>
                         </div>
 
                         <div className="flex gap-6 md:justify-end">

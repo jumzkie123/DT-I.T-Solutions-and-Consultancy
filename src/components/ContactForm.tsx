@@ -13,7 +13,7 @@ const ContactForm: React.FC = () => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('https://formsubmit.co/ajax/limutinkerby@gmail.com', {
+            const response = await fetch('https://formsubmit.co/ajax/support@dtitsc.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

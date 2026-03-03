@@ -13,6 +13,7 @@ export default {
         sans: ['Montserrat', 'sans-serif'],
         heading: ['Montserrat', 'sans-serif'],
         accent: ['Satisfy', 'cursive'],
+        tagline: ['Overstreet', 'sans-serif'],
       }
     },
   },

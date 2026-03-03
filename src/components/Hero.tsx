@@ -32,9 +32,9 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1 }}
-                    className="mt-4 text-lg md:text-2xl font-accent text-white/90"
+                    className="mt-4 text-2xl md:text-4xl font-tagline text-white/90"
                 >
-                    Bringing IT vision to life
+                    Bringing IT vision to life.
                 </motion.p>
 
                 <motion.div

@@ -40,7 +40,7 @@ const MissionVision: React.FC = () => {
                     >
                         <h3 className="text-xl md:text-2xl font-bold text-blue-300 uppercase tracking-widest mb-4">Vision</h3>
                         <p className="text-xl md:text-2xl font-normal text-white leading-tight lowercase first-letter:uppercase">
-                            Our vision is to develop continuously and grow into a major IT Solutions service provider, becoming a leading performer. We always guide our customers to success. <span className="font-accent text-white normal-case text-lg md:text-xl">Bringing IT Vision to Life.</span>
+                            Our vision is to develop continuously and grow into a major IT Solutions service provider, becoming a leading performer. We always guide our customers to success. <span className="font-tagline text-white normal-case text-2xl md:text-3xl">Bringing IT vision to life.</span>
                         </p>
                     </motion.div>
                 </div>

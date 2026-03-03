@@ -50,7 +50,7 @@ const About: React.FC = () => {
                             DT I.T. Solutions and Consultancy personnel have experience with numerous operating system platforms, including Microsoft Server, Windows 10/11, and Ubuntu Linux.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-white/80">
-                            At DreamTeam... <span className="font-accent text-white text-lg md:text-xl">We bring IT Vision to Life through Technology & Excellence.</span>
+                            At DreamTeam... <span className="font-tagline text-white text-2xl md:text-3xl">Bringing IT vision to life.</span>
                         </p>
 
                         <div className="pt-4">

@@ -10,7 +10,7 @@ const MissionVision: React.FC = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-3xl md:text-5xl font-black text-center text-white uppercase mb-12 md:mb-20 tracking-tight"
+                    className="text-3xl md:text-5xl font-bold text-center text-white uppercase mb-12 md:mb-20 tracking-tight"
                 >
                     Mission & Vision
                 </motion.h2>
@@ -24,8 +24,8 @@ const MissionVision: React.FC = () => {
                         transition={{ duration: 1, ease: 'easeOut' }}
                         className="bg-primary p-8 md:p-16"
                     >
-                        <h3 className="text-sm font-black text-blue-300 uppercase tracking-widest mb-4">Mission</h3>
-                        <p className="text-xl md:text-2xl font-black text-white leading-tight lowercase first-letter:uppercase">
+                        <h3 className="text-xl md:text-2xl font-bold text-blue-300 uppercase tracking-widest mb-4">Mission</h3>
+                        <p className="text-xl md:text-2xl font-normal text-white leading-tight lowercase first-letter:uppercase">
                             To provide the best technological support and to offer innovative IT Solutions and services to our customers that are manageable and cost-effective.
                         </p>
                     </motion.div>
@@ -38,9 +38,9 @@ const MissionVision: React.FC = () => {
                         transition={{ duration: 1, ease: 'easeOut' }}
                         className="bg-primary p-8 md:p-16 border-t md:border-t-0 border-white/10"
                     >
-                        <h3 className="text-sm font-black text-blue-300 uppercase tracking-widest mb-4">Vision</h3>
-                        <p className="text-lg md:text-xl font-black text-white leading-tight lowercase first-letter:uppercase">
-                            Our vision is to develop continuously and grow into a major IT Solutions service provider, becoming a leading performer. We always guide our customers to success. <span className="font-accent text-white normal-case text-base md:text-lg">Bringing IT Vision to Life.</span>
+                        <h3 className="text-xl md:text-2xl font-bold text-blue-300 uppercase tracking-widest mb-4">Vision</h3>
+                        <p className="text-xl md:text-2xl font-normal text-white leading-tight lowercase first-letter:uppercase">
+                            Our vision is to develop continuously and grow into a major IT Solutions service provider, becoming a leading performer. We always guide our customers to success. <span className="font-accent text-white normal-case text-lg md:text-xl">Bringing IT Vision to Life.</span>
                         </p>
                     </motion.div>
                 </div>

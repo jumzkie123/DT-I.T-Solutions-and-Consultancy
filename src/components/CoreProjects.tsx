@@ -4,6 +4,7 @@ import AgriTrack from '../assets/AgriTrack.png';
 import DocTrack from '../assets/DocTrack.png';
 import HRIS from '../assets/HRIS.webp';
 import QR from '../assets/QR.png';
+import ASSIST from '../assets/ASSIST.jpg';
 
 const projects = [
     {
@@ -25,6 +26,11 @@ const projects = [
         title: 'Attendance with QR',
         image: QR,
         link: 'https://attendance-with-qr.vercel.app/'
+    },
+    {
+        title: 'ASSIST',
+        image: ASSIST,
+        link: 'https://ticketting-system-drab.vercel.app/'
     }
 ];
 
@@ -49,7 +55,7 @@ const CoreProjects: React.FC = () => {
                     </div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                     {projects.map((project, index) => (
                         <motion.a
                             key={index}

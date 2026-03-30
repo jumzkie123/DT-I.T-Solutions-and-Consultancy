@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 interface FooterProps {
     onNavigate: (page: string, category?: string, section?: string) => void;
@@ -6,11 +7,14 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     return (
-        <footer id="contact" className="bg-primary pt-16 md:pt-24 pb-12 md:pb-20 text-white">
+        <footer id="contact" className="bg-primary pt-16 md:pt-24 pb-12 md:pb-20 text-white border-t border-white/5">
             <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 text-balance">
                     {/* Left Column: Contact Info */}
                     <div className="space-y-8">
+                        <div className="mb-0">
+                            <img src={logo} alt="DT Logo" className="h-28 md:h-32 w-auto mb-4" />
+                        </div>
                         <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight">CONTACT US</h2>
 
                         <div className="space-y-5 text-sm md:text-base font-light">

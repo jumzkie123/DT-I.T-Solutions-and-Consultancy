@@ -42,10 +42,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                             <img
                                 src={logo}
                                 alt="DreamTeam I.T. Logo"
-                                className="h-28 lg:h-48 w-auto absolute top-1/2 -translate-y-1/2 left-0 max-w-none"
+                                className="h-28 lg:h-52 w-auto absolute top-1/2 -translate-y-1/2 left-0 max-w-none z-[60] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]"
                             />
                             {/* Spacer to maintain layout width since img is absolute */}
-                            <div className="h-20 lg:h-28 w-48 lg:w-72"></div>
+                            <div className="h-20 lg:h-28 w-56 lg:w-[400px]"></div>
                         </div>
 
                         {/* Desktop Links */}

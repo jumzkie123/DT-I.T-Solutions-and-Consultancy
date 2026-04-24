@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import surveyLogo from '../assets/669433957_1716298556444427_1534753694458362846_n.png';
 
 interface FooterProps {
     onNavigate: (page: string, category?: string, section?: string) => void;
@@ -64,6 +65,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                                     dtitsolutions.blogspot.com
                                 </a>
                             </div>
+
+                            {/* Survey System */}
+                            <div className="flex items-center gap-4">
+                                <div className="h-5 w-5 flex items-center justify-center shrink-0">
+                                    <img src={surveyLogo} alt="S.U.R.V.E.Y. Logo" className="h-full w-auto object-contain brightness-0 invert" />
+                                </div>
+                                <a href="https://survey-system-rust.vercel.app/" target="_blank" rel="noreferrer" className="hover:underline">
+                                    survey-system-rust.vercel.app
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -89,6 +100,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M21.976 24H2.026C.9 24 0 23.1 0 21.976V2.026C0 .9.9 0 2.026 0h19.95C23.1 0 24 .9 24 2.026v19.95C24 23.1 23.1 24 21.976 24zM13.537 5.4H8.376C6.74 5.4 5.4 6.74 5.4 8.376v7.248C5.4 17.26 6.74 18.6 8.376 18.6h7.248c1.636 0 2.976-1.34 2.976-2.976v-4.672a.862.862 0 00-.862-.862h-1.427a.862.862 0 00-.862.862v3.75a.862.862 0 01-.862.862h-4.18a.862.862 0 01-.862-.862V9.238c0-.476.386-.862.862-.862h3.13a.862.862 0 00.862-.862V6.262A.862.862 0 0013.537 5.4z" />
                                 </svg>
+                            </a>
+                            <a href="https://survey-system-rust.vercel.app/" target="_blank" rel="noreferrer" className="text-white hover:opacity-70 transition-opacity" title="S.U.R.V.E.Y. System">
+                                <img src={surveyLogo} alt="S.U.R.V.E.Y. Logo" className="h-6 w-auto object-contain brightness-0 invert" />
                             </a>
                         </div>
 

@@ -15,6 +15,7 @@ import hrisLogo from '../assets/HRIS.png';
 import docTrackingLogo from '../assets/Document Tracking.png';
 import pawnshopLogo from '../assets/pawnshop.webp';
 import posRetailLogo from '../assets/POS RETAIL.png';
+import surveyLogo from '../assets/669433957_1716298556444427_1534753694458362846_n.png';
 
 const categories = [
     {
@@ -77,6 +78,11 @@ const categories = [
                 title: 'POS Retail',
                 image: posRetailLogo,
                 desc: 'A modern Point of Sale system built to streamline retail transactions, manage stocks, and provide detailed sales analytics.'
+            },
+            {
+                title: 'S.U.R.V.E.Y.',
+                image: surveyLogo,
+                desc: 'Smart Unified Response Validation and Evaluation System designed for comprehensive data gathering and analysis.'
             },
         ]
     }

@@ -5,6 +5,7 @@ import DocTrack from '../assets/DocTrack.png';
 import HRIS from '../assets/HRIS.webp';
 import QR from '../assets/QR.png';
 import ASSIST from '../assets/ASSIST.jpg';
+import SURVEY from '../assets/669433957_1716298556444427_1534753694458362846_n.png';
 
 const projects = [
     {
@@ -31,6 +32,11 @@ const projects = [
         title: 'ASSIST',
         image: ASSIST,
         link: 'https://ticketting-system-drab.vercel.app/'
+    },
+    {
+        title: 'S.U.R.V.E.Y.',
+        image: SURVEY,
+        link: 'https://survey-system-rust.vercel.app/'
     }
 ];
 
